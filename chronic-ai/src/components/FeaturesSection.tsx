@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionValue, useSpring, Variants } from "framer-motion";
 import {
   Brain,
   Pill,
@@ -10,7 +10,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 
-const floatVariants = {
+const floatVariants: Variants = {
   animate: (i: number) => ({
     y: [0, -10, 0],
     transition: {
